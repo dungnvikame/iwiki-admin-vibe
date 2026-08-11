@@ -66,7 +66,11 @@ main { min-width: 0; }
 .search input { border: 0; outline: 0; min-width: 0; background: transparent; width: 100%; font-size: 13px; }
 .round-button { width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--line); background: white; color: #6e7889; cursor: pointer; position: relative; }
 .notification i { position: absolute; top: 7px; right: 7px; width: 5px; height: 5px; border-radius: 50%; background: var(--red); }
-.filter-panel { background: white; padding: 14px 28px 13px; display: flex; align-items: end; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.filter-panel { background: white; padding: 13px 28px 14px; display: flex; align-items: end; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.filter-block { display: flex; flex-direction: column; gap: 9px; }
+.filter-caption { display: flex; align-items: center; gap: 9px; color: #26354d; }
+.filter-caption strong { font-size: 12px; }
+.filter-caption span { font-size: 10px; color: #8993a5; padding-left: 9px; border-left: 1px solid #dfe4ec; }
 .filters { display: grid; grid-template-columns: 190px 190px 160px 210px; gap: 12px; }
 .select-field { display: flex; flex-direction: column; gap: 5px; color: #747f91; font-size: 11px; font-weight: 700; }
 .select-field select, .small-select { height: 38px; border: 1px solid #d8dee8; background: white; border-radius: 7px; padding: 0 34px 0 10px; color: #263247; font-size: 13px; outline: 0; }
