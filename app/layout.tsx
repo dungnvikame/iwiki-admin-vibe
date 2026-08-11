@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "https://iwiki-knowledge-dashboard.ikame-global-8100.chatgpt.site",
+  ),
   title: "iWiki Knowledge Dashboard",
   description: "Prototype dashboard quản trị kho tri thức nội bộ iWiki.",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
